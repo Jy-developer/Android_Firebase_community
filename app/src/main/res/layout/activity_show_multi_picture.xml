@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".navigation.ShowMultiPictureActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/show_multiple_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/multiple_pic_show_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"/>
+
+</FrameLayout>

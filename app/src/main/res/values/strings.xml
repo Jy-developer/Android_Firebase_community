@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">유나의 하루</string>
+    <string name="facebook_app_id">443847546657587</string>
+    <string name="fb_login_protocol_scheme">fb443847546657587</string>
+
+    <!-- Exit Dialog  -->
+    <string name="exit_dialog_message">앱을 종료하시겠습니까?</string>
+
+    <!-- Sign In -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="signin_email">회원가입 및 이메일 로그인</string>
+    <string name="signin_google">Google로 로그인</string>
+    <string name="signin_facebook">Facebook으로 로그인</string>
+    <string name="signup_complete">회원가입 성공</string>
+    <string name="signin_complete">로그인 성공</string>
+    <string name="signout">로그아웃</string>
+    <string name="signout_success">로그아웃 성공</string>
+    <string name="signout_fail">로그아웃 실패</string>
+    <string name="signout_fail_null">이메일과 비밀번호를 입력해주세요</string>
+
+    <!-- DetailFragment , 일본어 에선 いいね！　　와 　件 으로 할 것-->
+    <string name="good">좋아요&#160;</string>
+    <string name="good_count">개</string>
+    <string name="delete_complete">일기를 삭제하였습니다.</string>
+    <string name="ask_really_delete">일기를 정말 삭제하시겠습니까?</string>
+    <string name="ask_editing_diary">일기를 수정하시겠습니까?</string>
+    <string name="yes_in_detailfrag">예</string>
+    <string name="no_in_detailfrag">아니오</string>
+    <string name="comment_really_delete">댓글을 삭제하시겠습니까?</string>
+    <string name="ask_download_title">다운로드 안내</string>
+    <string name="ask_download">일기의 사진 또는 영상을 내 폰(갤러리)에 저장하시겠습니까?</string>
+    <string name="download_completed">다운로드가 완료되었습니다.</string>
+
+    <!-- 다운로드 관련 메시지 -->
+    <string name="download_success_msg">영상(사진) 다운로드 성공</string>
+    <string name="download_failed_msg">영상(사진) 다운로드 실패</string>
+    <string name="notification_clicked_msg">알림이 눌렸습니다</string>
+    <string name="download_movie_guide_message">영상은 모두 Youtube에 업로드되어 있으며 Youtube에서 별도의 프로그램으로 다운로드를 받으셔야 합니다.</string>
+
+    <!-- Bottom Navigation View -->
+    <string name="home">일기장</string>
+    <string name="search">사진 모아보기</string>
+    <string name="gallery">일기쓰기</string>
+    <string name="favorite">받은 메시지</string>
+    <string name="account">내 계정</string>
+
+    <!-- Account -->
+    <string name="post">게시물</string>
+    <string name="following">팔로잉</string>
+    <string name="follower">팔로워</string>
+    <string name="follow">팔로우</string>
+    <string name="follow_cancel">팔로우 취소</string>
+    <string name="profile">Profile</string>
+    <string name="count_0">0</string>
+    <string name="profile_image_edit_success">프로필 사진이 수정되었습니다.</string>
+    <string name="version_check">앱 업데이트 확인</string>
+    <string name="webpage_guide">유나의 하루 웹(WEB)페이지 주소 안내</string>
+    <string name="webpage_guide_dialog_title">유나의 하루 WebPage 안내</string>
+    <string name="webpage_guide_dialog_content">1. 유나의 하루 웹 주소\nhttps://yunadiary-e5c60.web.app\n2. 사용방법\n기존 안드로이드 앱에서
+        사용하던 구글이나 페이스북, 또는 이메일 계정으로 로그인하시면 됩니다. 웹페이지에서는 이메일 계정의 비밀번호도 바꾸실 수 있습니다.\n3. 특징\n최소 1024px이상의
+        화면에 최적화되어 있어 데스크탑 모니터나 타블렛으로 접속하시길 추천드립니다. 크롬, 엣지 등의 범용 웹브라우저에 최적화되어 있으며 휴대폰의
+        카카오톡 인터넷웹브라우저 등은 접속오류가 발생할 수 있습니다.\n\n(확인 버튼을 누르시면 웹 주소가 메모리에 복사[CTRL+C]됩니다)</string>
+    <string name="webpage_address">https://yunadiary-e5c60.web.app</string>
+    <string name="message_clipboard_copied">웹주소가 클립보드에 복사되었습니다</string>
+
+    <!-- Alarm -->
+    <string name="alarm_favorite">님이 좋아요를 눌렀습니다.</string>
+    <string name="alarm_who">님이&#160;</string>
+    <string name="alarm_comment">&#160;메세지를 남겼습니다.</string>
+    <string name="alarm_follow">님이 당신의 계정을 팔로우하기 시작했습니다.</string>
+    <string name="push_title">유나의 하루가 갱신되었어요~</string>
+    <string name="alarm_new_content">님이 새 일기를 올렸습니다</string>
+
+    <!-- Comment -->
+    <string name="send">보내기</string>
+    <string name="comment_upload_error">댓글은 1자 이상 작성하셔야 합니다.</string>
+
+    <!-- Add Photo -->
+    <string name="upload_image">유나 일기 올리기!</string>
+    <string name="volume_down">용량 최적화</string>
+    <string name="hint_image_content">내용</string>
+    <string name="upload_success">업로드 성공</string>
+    <string name="upload_update_success">사진첩 수정 업로드 성공</string>
+    <string name="upload_fail">업로드 실패</string>
+    <string name="diary_upload_error">사진이 없거나, 일기의 내용이 너무 짧습니다.</string>
+    <string name="movie_upload_error">동영상을 지정하지 않았거나, 일기의 내용이 너무 짧습니다.</string>
+    <string name="word_count">" 자"</string>
+    <string name="minimun_length_show">"(일기 내용을 좀 더 길게 써주세요)   "</string>
+    <string name="warning">Warning</string>
+    <string name="warningmessage">일기를 작성중입니다. 작성을 정말 종료하시겠습니까?\n(작성 중이던 사항은 모두 날아갑니다)</string>
+    <string name="multi_update_pic_upload_failed">사진첩 수정 업로드 실패</string>
+    <string name="multipic_uploading_message">사진첩 일기 사진들 업로드 중…</string>
+
+    <!-- Add Video -->
+    <string name="preview_video">미리보기</string>
+    <string name="upload_video_diary">영상 일기 올리기</string>
+    <string name="movieupload_warningmessage">용량 최적화 없이 비디오 올리기 모드로 들어갈까요?\n(주의!! 비디오가 현재 용량 그대로 올라갑니다!!) </string>
+    <string name="video_volum_nolimit_title">비디오 용량제한 해제</string>
+    <string name="error_google_login_for_youtube">유튜브 업로드는 Google계정 로그인 및 권한 허용이 필요합니다.</string>
+    <string name="youtube_uploading_message">영상 일기 업로드 중…</string>
+    <string name="too_short_diary_warning">일기 내용을 너무 짧게 수정했습니다.</string>
+    <string name="diary_text_updated">일기가 수정되었습니다.</string>
+    <string name="waiting_beg_msg">업로드를 시작합니다. 보통 수십초가 걸립니다…</string>
+    <string name="failure_to_get_token">구글 엑세스 토큰을 얻는데 실패하였습니다. 다시 시도해 주세요.</string>
+    <string name="video_thumnail_btn">영상 표지</string>
+    <string name="example_youtubelink">예) https://youtu.be/kBo8L1TuxGA</string>
+    <string name="youtube_link_insert_success">\nYoutube 공유 링크가 정상적으로 입력되었습니다. 이제 여기에 일기 내용을 입력하시고 아래 [올리기]버튼을 누르시면 됩니다.</string>
+    <string name="abnormal_youtube_link">정상적인 Youtube 영상 링크가 아닙니다.</string>
+    <string name="normal_youtube_link">정상적인 Youtube 링크입니다.</string>
+    <string name="unauthrized_user">인증되지 않은 사용자입니다. 정상 가입 및 인증 후 사용해 주세요.</string>
+    <string name="no_youtube_or_short_diary">정상적인 Youtube 링크를 지정하지 않았거나, 일기 내용이 너무 짧습니다.</string>
+    <string name="upload_fail_db">업로드를 실패하였습니다.\nFirebaseDB 생성 실패</string>
+    <string name="upload_fail_timeout">업로드를 실패하였습니다.\n시간 제한 초과</string>
+
+    <!-- Crop Image -->
+    <string name="pick_image_title">가로세로 5:3 추천</string>
+    <string name="crop">자르기</string>
+    <string name="pick_profile_crop">프로필 사진 고르기</string>
+
+    <!-- Insert usersInfo -->
+    <string name="insert_info_title">필수 정보 기입 (처음 한번만)</string>
+    <string name="insert_info_name">이름</string>
+    <string name="insert_info_relation">유나와의 관계 (ex: 삼촌, 이모 등…)</string>
+    <string name="insert_info_word_wannasay">이메일로 안내받은 인증번호 (미인증시 사용불가)</string>
+    <string name="insert_info_submit">완료</string>
+    <string name="submit_all_info">이름과 관계, 인증번호를 모두 쓰셔야 해요.</string>
+    <string name="submit_complete">정보입력이 완료되었습니다.</string>
+    <string name="submit_failed">인증번호가 일치하지 않습니다.</string>
+
+    <!-- App Update message-->
+    <string name="update_btn_yes">마켓 바로가기</string>
+    <string name="update_btn_no">나중에</string>
+    <string name="update_inform">최신 업데이트 안내</string>
+    <string name="update_already_new">앱이 현재 최신 버전입니다.</string>
+    <string name="terminate_app">종료</string>
+
+    <!-- 개별 앱 버젼 업데이트 안내 -->
+    <string name="update_inform_1_09_title">Ver 1.09 신기능 안내</string>
+    <string name="update_inform_1_09_explain">[사진 모아보기]에서 사진을 누르면 해당 날짜의 [일기장]으로 바로 이동합니다.</string>
+    <string name="update_inform_1_3_title">Ver 1.3 패치 내역</string>
+    <string name="update_inform_1_3_explain">1. 유나의 하루 [웹페이지] 오픈\nhttps://yunadiary-e5c60.web.app 에서 유나의 사진과 영상을 커다란 모니터 화면
+        에서 보실 수 있어요~\n(웹페이지 주소는 화면 하단의 [내 계정]에서 다시 확인하실 수 있습니다.)\n\n2. 사진 다운로드 기능 패치\n안드로이드 버전 Q이상 및 하위 버전
+        에서 "사진 다운로드 기능"을 정상화하였습니다.\n(버그 발생시 개발자에게 연락 부탁드립니다)</string>
+    <string name="yes_in_updateinform">확인</string>
+
+    <!-- Toolbar -->
+    <string name="back">Back</string>
+
+    <!-- menu -->
+    <string name="menu_upload_movie">동영상 올리기</string>
+    <string name="menu_upload_pic">사진 1장 올리기</string>
+    <string name="menu_upload_multi_pic">사진 여러장 올리기</string>
+
+    <!-- 스토리지 읽기 권한 없을 때 -> User Account쪽에서 권한 수정하라는 메시지 추가할까 싶음 -->
+    <string name="permission_denied_msg">스토리지 읽기 및 쓰기 권한이 없습니다.</string>
+
+    <!-- etc -->
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

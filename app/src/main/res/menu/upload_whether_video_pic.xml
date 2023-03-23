@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/upload_multi_pic"
+        android:enabled="true"
+        android:icon="@drawable/multiple_photo_pic"
+        android:title="@string/menu_upload_multi_pic"
+        />
+    <item
+        android:id="@+id/upload_video"
+        android:enabled="true"
+        android:icon="@drawable/video_pic"
+        android:title="@string/menu_upload_movie"
+        />
+</menu>

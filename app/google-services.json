@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "404511790506",
+    "project_id": "yunadiary-e5c60",
+    "storage_bucket": "yunadiary-e5c60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404511790506:android:69f46f1e41bac2587787d3",
+        "android_client_info": {
+          "package_name": "com.jycompany.yunadiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404511790506-bouk4bc5il9svgt59r4lkuhejbq33m70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jycompany.yunadiary",
+            "certificate_hash": "bcee2241c3fe12c1ddd9e4fbf94fdc7a3b04e3be"
+          }
+        },
+        {
+          "client_id": "404511790506-vuu3cm1hhfb7utqrgldb3a707935bpaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYw4EzJy8JXF_0YWrwq0RkzWd9Pjre80s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404511790506-vuu3cm1hhfb7utqrgldb3a707935bpaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.AddYoutubeMovieActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/activity_main_logo"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/toolbar_division"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/my_toolbar"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorDivision"
+        android:orientation="horizontal"/>
+
+    <!-- Contents -->
+    <ImageView
+        android:id="@+id/add_movie_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbar_division"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter"
+        android:src = "@drawable/upload_choose_video"/>
+    <LinearLayout
+        android:id="@+id/youtube_link_and_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/add_movie_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/video_link_for_tnail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="@string/example_youtubelink"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/check_youtube_tnail_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:theme="@style/ButtonStyle"
+            android:text="@string/video_thumnail_btn"
+            style="@style/ButtonFontCustom"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addmovie_show_byte_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/youtube_link_and_btn"
+        android:layout_alignRight="@id/edittext"
+        tools:text="0 byte"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addmovie_show_byte_count"
+        android:layout_above="@id/add_movie_bottom_linear"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/add_movie_edit_explain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="@string/hint_image_content"
+            android:inputType="textMultiLine"
+            style="@style/ButtonFontCustom"
+            android:scrollHorizontally="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/add_movie_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/add_movie_btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_video_diary"
+            android:theme="@style/ButtonStyle"
+            style="@style/ButtonFontCustom"/>
+    </LinearLayout>
+</RelativeLayout>

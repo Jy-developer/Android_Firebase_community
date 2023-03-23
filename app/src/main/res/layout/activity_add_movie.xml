@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.AddPhotoActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/activity_main_logo"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/toolbar_division"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/my_toolbar"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorDivision"
+        android:orientation="horizontal"/>
+
+    <!-- Contents -->
+    <ImageView
+        android:id="@+id/add_movie_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbar_division"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter"
+        android:src = "@drawable/movie_upload_explains"/>
+
+    <RelativeLayout
+        android:id="@+id/info_about_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_below="@id/add_movie_image">
+        <TextView
+            android:id="@+id/originalSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="Original Size"/>
+        <TextView
+            android:id="@+id/text_progress_volume_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/originalSize"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorEmailSignInPressed"
+            android:textSize="20sp"
+            tools:text="Progress" />
+        <ProgressBar
+            android:id="@+id/progressBar_volume_down"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_progress_volume_down"
+            android:max="100"
+            android:progress="0" />
+        <TextView
+            android:id="@+id/newSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar_volume_down"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="Size after compression" />
+        <TextView
+            android:id="@+id/timeTaken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newSize"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/com_facebook_blue"
+            android:textSize="16sp"
+            tools:text="Duration" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/addmovie_show_byte_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_about_volume"
+        android:layout_alignRight="@id/edittext"
+        tools:text="0 byte"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addmovie_show_byte_count"
+        android:layout_above="@id/add_movie_bottom_linear"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentLeft="true">
+
+        <EditText
+            android:id="@+id/add_movie_edit_explain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="@string/hint_image_content"
+            android:inputType="textMultiLine"
+            style="@style/ButtonFontCustom"
+            android:scrollHorizontally="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/add_movie_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/volume_down_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/volume_down"
+            android:enabled="true"
+            android:theme="@style/ButtonStyle"
+            style="@style/ButtonFontCustom"/>
+        <Button
+            android:id="@+id/preview_after_voldown_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:enabled="false"
+            android:text="@string/preview_video"
+            android:theme="@style/ButtonStyle"
+            style="@style/ButtonFontCustom"/>
+        <Button
+            android:id="@+id/add_movie_btn_upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/upload_video_diary"
+            android:enabled="false"
+            android:theme="@style/ButtonStyle"
+            style="@style/ButtonFontCustom"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FontContent">
+        <item name="android:fontFamily">@font/hanmaum_myungjo</item>
+    </style>
+
+    <style name="FontComment">
+        <item name="android:fontFamily">@font/misaeng</item>
+    </style>
+
+    <style name="FontCommentUserName">
+        <item name="android:fontFamily">@font/yeonji</item>
+    </style>
+
+    <style name="ButtonFontCustom">
+        <item name="android:fontFamily">@font/hanmaum_myungjo</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorWhite</item>
+    </style>
+
+</resources>
